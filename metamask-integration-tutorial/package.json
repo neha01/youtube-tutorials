@@ -1,0 +1,19 @@
+{
+    "dependencies": {
+      "@metamask/onboarding": "^1.0.1",
+      "express": "^4.18.2",
+      "i": "^0.3.7",
+      "npm": "^8.19.3",
+      "path": "^0.12.7"
+    },
+    "scripts": {
+      "start": "node server.js"
+    },
+    "name": "connect-wallet",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "description": ""
+  }
+  
