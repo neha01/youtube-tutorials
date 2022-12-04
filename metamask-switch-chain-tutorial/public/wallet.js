@@ -1,9 +1,9 @@
 const gorelliChainId = 5;
 const polygonChainId = 137;
 
-let web3;
 
 const initialize = () => {
+let web3;
  connect = async() => {
   const { ethereum } = window;
   if (ethereum) {
