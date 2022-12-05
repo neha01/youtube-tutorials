@@ -23,13 +23,13 @@ const initialize = () => {
         const currentChainId = await web3.eth.getChainId();
         if (currentChainId != chainId){
             try {
-                await web3.currentProvider.request({
+                await ethereum.request({
                     method:'wallet_switchEthereumChain',
                     params: [{chainId: Web3.utils.toHex(chainId)}]
                 });
                 console.log(`switched to chainid : ${chainId} succesfully`);
             }catch(err){
-                console.log(`error occured while switching chain to chainId ${chainId}, err: ${err.message} err: ${err.code}`);
+                console.log(`error occured while switching chain to chainId ${chainId}, err: ${err.message} code: ${err.code}`);
                 if (err.code === 4902){
                     addNetwork(polygonNetwork);
                 }
